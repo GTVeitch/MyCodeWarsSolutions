@@ -9,7 +9,7 @@ questions:
 
     basicMathematicalOperations:{
         kyu: 8,
-        prompt: "",
+        prompt: "Your task is to create a function that does four basic mathematical operations.The function should take three arguments - operation(string/char), value1(number), value2(number). The function should return result of numbers after applying the chosen operation.",
         solution: "function basicOp(operation, value1, value2){
             if(operation=='+'){
                 return (value1 + value2)
@@ -25,6 +25,17 @@ questions:
                 }
             }"
             
+    },
+
+    grasshopperPersonalizedMessage:{
+        kyu:8
+        prompt: "Create a function that gives a personalized greeting. This function takes two parameters: name and owner.",
+        solution: "function greet (name, owner) {
+            if(name===owner){
+                return 'Hello boss'
+            }
+            else return 'Hello guest'
+            }"
     }
 
 
