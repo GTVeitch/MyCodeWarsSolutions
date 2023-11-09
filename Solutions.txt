@@ -1,0 +1,13 @@
+questions: 
+{
+    beginnerSeries2Clock: {
+        kyu: 8,
+        prompt: "Your task is to write a function which returns the time since midnight in milliseconds.",
+        solution: "function past(h, m, s){ return ((h*60+m)*60+s)*1000}"
+    }
+
+
+
+
+
+}
