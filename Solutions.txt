@@ -28,7 +28,7 @@ questions:
     },
 
     grasshopperPersonalizedMessage:{
-        kyu:8
+        kyu:8,
         prompt: "Create a function that gives a personalized greeting. This function takes two parameters: name and owner.",
         solution: "function greet (name, owner) {
             if(name===owner){
@@ -43,6 +43,14 @@ questions:
         prompt: "Write function RemoveExclamationMarks which removes all exclamation marks from a given string.",
         solution: "function removeExclamationMarks(s) {
             return s.split("").filter((l) => l != "!").join("");
+            }"
+    },
+
+    simpleMultiplication:{
+        kyu:8,
+        prompt:"This kata is about multiplying a given number by eight if it is an even number and by nine otherwise."
+        solution:"function simpleMultiplication(number) {
+                return (number%2==1)?number*9:number*8
             }"
     }
 
