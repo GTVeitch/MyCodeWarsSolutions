@@ -112,6 +112,31 @@ questions:
             }
             return output
             }"
+    },
+
+    uniqueInOrder:{
+        kyu: 6,
+        prompt: "
+        solution : "var uniqueInOrder=function(iterable){
+            
+            let iterate = iterable
+            let solution = []
+            
+            if ((typeof iterate) === (typeof "string")) {
+                iterate = iterate.split('')
+            }
+            
+            let current = iterate[0]
+            
+            while (iterate.length != 0 ) {
+                while (iterate[0] == current){
+                    iterate.shift()
+                } 
+                solution.push(current)
+                current = iterate[0]
+            }
+                return solution
+            }"
     }
 
 
