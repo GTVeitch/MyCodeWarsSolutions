@@ -116,7 +116,7 @@ questions:
 
     uniqueInOrder:{
         kyu: 6,
-        prompt: "
+        prompt: "Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements."
         solution : "var uniqueInOrder=function(iterable){
             
             let iterate = iterable
@@ -136,6 +136,16 @@ questions:
                 current = iterate[0]
             }
                 return solution
+            }"
+    },
+
+    detectPangram: {
+        kyu: 6,
+        prompt: "A pangram is a sentence which uses every letter of the alphabet. Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.",
+        solution: "function isPangram(string){
+            let alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+            let pan = alpha.map((letter) => string.includes(letter) )
+            return !pan.includes(false)
             }"
     }
 
