@@ -178,6 +178,32 @@ questions:
             sums.push(0)
             return sums
             }"
+    },
+
+    createPhoneNumber: {
+        kyu: 6,
+        prompt: "You will recieve and array of 10 numbers, format them to be a phone number, like (123) 456-789.",
+        solution: "function createPhoneNumber(numbers){
+  
+            let area = [] //wouldnt let me use = numbers [0, 1, 2]
+            area.push(numbers[0])
+            area.push(numbers[1])
+            area.push(numbers[2])
+            let part2 = []
+            part2.push(numbers[3])
+            part2.push(numbers[4])
+            part2.push(numbers[5])
+            let part3 = []
+            part3.push(numbers[6])
+            part3.push(numbers[7])
+            part3.push(numbers[8])
+            part3.push(numbers[9])
+            
+            let phoneNumber = `(${area.join("")}) ${part2.join("")}-${part3.join("")}`
+
+            
+            return phoneNumber
+            }"
     }
 
 
