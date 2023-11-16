@@ -204,6 +204,15 @@ questions:
             
             return phoneNumber
             }"
+    },
+
+    sumOfTwoLowestPossibleIntegers: {
+        kyu, 7,
+        prompt: "Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.",
+        solution: "function sumTwoSmallestNumbers(numbers) {  
+            let n = numbers.sort(function(a, b) {return a - b})
+            return n[0] + n[1]
+            }"
     }
 
 
