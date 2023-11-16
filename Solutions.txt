@@ -163,6 +163,21 @@ questions:
             
             return (n==0)?(counter-1):(-1)
             }"
+    },
+
+    sumOfParts: {
+        kyu: 6,
+        prompt: "Add every element in an array of numbers together, save that number in an array, then remove the first element of the original array. Repeat until there are no elements left in the original array.",
+        solution: "function partsSums(ls) {
+                let sums = []
+                let list = ls
+                while (list.length > 0) {
+                sums.push(list.reduce((partialSum, a) => partialSum + a, 0))
+                list.shift()
+                }
+            sums.push(0)
+            return sums
+            }"
     }
 
 
