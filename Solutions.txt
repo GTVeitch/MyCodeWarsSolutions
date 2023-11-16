@@ -207,11 +207,20 @@ questions:
     },
 
     sumOfTwoLowestPossibleIntegers: {
-        kyu, 7,
+        kyu: 7,
         prompt: "Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.",
         solution: "function sumTwoSmallestNumbers(numbers) {  
             let n = numbers.sort(function(a, b) {return a - b})
             return n[0] + n[1]
+            }"
+    },
+
+    arrayDiff: {
+        kyu: 6,
+        prompt: "Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list 'a' that are present in list 'b' whilst maintaining their order.
+        solution: "function arrayDiff(a, b) {
+            const filtered = a.filter((keyword) => !b.includes(keyword))
+            return filtered
             }"
     }
 
