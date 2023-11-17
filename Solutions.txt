@@ -222,6 +222,32 @@ questions:
             const filtered = a.filter((keyword) => !b.includes(keyword))
             return filtered
             }"
+    },
+
+    directionsReduction : {
+        kyu: 5,
+        prompt: "Remove adjacent North and South as well as East and West from an array of directions.",
+        solution: "function dirReduc(arr){
+  
+        let prevDir = ""
+        let newDirs = []
+        
+        arr.forEach((dir) => {
+            let check = false
+            if ((dir == "NORTH" & prevDir =="SOUTH") || (dir == "SOUTH" & prevDir =="NORTH") || (dir == "EAST" & prevDir =="WEST") || (dir == "WEST" & prevDir =="EAST")) {
+            newDirs.pop()
+            prevDir = `${newDirs[newDirs.length - 1]}`
+            check = true
+            }
+            if (check == false) {
+            newDirs.push(dir)
+            prevDir = `${newDirs[newDirs.length - 1]}`
+            }
+        })
+        
+        return newDirs
+        
+        }"
     }
 
 
