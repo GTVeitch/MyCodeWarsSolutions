@@ -264,6 +264,22 @@ questions:
             return words
 
             }"
+    },
+
+    bitCounting: {
+        kyu: 6, 
+        prompt: "Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number.",
+        solution: "var countBits = function(n) {
+            let total = 0
+            let bits = (n >>> 0).toString(2)
+            bits = bits.split(``)
+            
+            bits.forEach((bit) => {
+                total = total + Number(bit)
+            })
+            
+            return total
+            }"
     }
 
 
