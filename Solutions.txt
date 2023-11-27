@@ -248,6 +248,22 @@ questions:
         return newDirs
         
         }"
+    },
+
+    stopSpinningMyWords: {
+        kyu: 6,
+        prompt: "Invert every word in a string with 5 or more letters.",
+        solution: "function spinWords(string){
+            let words = string.split(' ')
+            
+            words = words.map((word) => {
+                return (word.split('').length>4)?(word.split('').reverse().join('')):word
+            })  
+            words = words.join(' ')
+            
+            return words
+
+            }"
     }
 
 
