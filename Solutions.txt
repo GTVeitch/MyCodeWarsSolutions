@@ -308,6 +308,25 @@ questions:
             let stringified = b?'true':'false'
             return stringified
             }"
+    },
+
+    tribonacciSequence: {
+        kyu: 6,
+        prompt: "Return the first 10 digits of a Fibonacci Squence that sums the three most recent numbers in an array.",
+        solution: "function tribonacci(signature,n){
+            let seq = signature
+            
+            for(let i=0; i<(n-3); i++) {
+                let a = signature[i]
+                let b = signature[i+1]
+                let c = signature[i+2]
+                let total = a + b + c
+                seq.push(total)
+            }
+            
+            return seq
+            
+            }"
     }
 
 
