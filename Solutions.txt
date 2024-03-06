@@ -369,6 +369,15 @@ questions:
             solution: "function opposite(number) {
                 return -number
                 }"
+        },
+
+        convertStringToArray: {
+            kyu: 8,
+            prompt: "Write a function which turns a string into an array of words.",
+            solution: " function stringToArray(string){
+                return string.split(' ')
+
+                }"
         }
 
 
