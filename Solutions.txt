@@ -361,6 +361,14 @@ questions:
                 return real
   
             }"
+        },
+
+        oppositeNumber: {
+            kyu: 7,
+            prompt: "Given an number, find and return its opposite.",
+            solution: "function opposite(number) {
+                return -number
+                }"
         }
 
 
