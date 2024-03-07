@@ -396,6 +396,15 @@ questions:
             solution: "function smash (words) {
                 return words.toString().replaceAll(',', ' ')
                 }
+        },
+
+        codeUnderPressure1: {
+            kyu: 8,
+            prompt: "Code as fast as you can, double an integer and return it.",
+            solution: "function doubleInteger(i) {
+                return i*2
+                }"
+            }
         }
 
 
