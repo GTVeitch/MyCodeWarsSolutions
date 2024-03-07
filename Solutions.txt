@@ -388,6 +388,14 @@ questions:
                 numbers.forEach(number => sum += (number * number))
                 return sum
                 }"
+        },
+
+        sentenceSmash; {
+            kyu: 8,
+            prompt: "Write a fuction which takes an array of words and turns them into a sentence. You may ignore puncuation.",
+            solution: "function smash (words) {
+                return words.toString().replaceAll(',', ' ')
+                }
         }
 
 
