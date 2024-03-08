@@ -329,83 +329,97 @@ questions:
             }"
     },
 
-        exesAndOhs: {
-            kyu: 8,
-            prompt: "Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.",
-            solution: "function XO(str) {
-                let exes = 0
-                let ohs = 0
-                let chars = str.split("")
+    exesAndOhs: {
+        kyu: 8,
+        prompt: "Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.",
+        solution: "function XO(str) {
+            let exes = 0
+            let ohs = 0
+            let chars = str.split("")
 
-                chars.forEach(char => {
-                if(char.toLowerCase() == 'x') { exes += 1}
-                if(char.toLowerCase() == 'o') { ohs += 1}
-                })
-                
-                return exes==ohs?true:false
+            chars.forEach(char => {
+            if(char.toLowerCase() == 'x') { exes += 1}
+            if(char.toLowerCase() == 'o') { ohs += 1}
+            })
+            
+            return exes==ohs?true:false
+        
+        }"
+    },
+
+    friendOrFoe: {
+        kyu: 7,
+        prompt: "Make a prompt that filters an array of strings and returns only those with 4 letters in them.",
+        solution: "function friend(friends){
+            let real = []
+            friends.forEach((person) => { 
+                if(person.length == 4) {
+                real.push(person)
+                }
+            })
+
+            return real
+
+        }"
+    },
+
+    oppositeNumber: {
+        kyu: 7,
+        prompt: "Given an number, find and return its opposite.",
+        solution: "function opposite(number) {
+            return -number
+            }"
+    },
+
+    convertStringToArray: {
+        kyu: 8,
+        prompt: "Write a function which turns a string into an array of words.",
+        solution: " function stringToArray(string){
+            return string.split(' ')
+
+            }"
+    },
+
+    squareSum: {
+        kyu: 8,
+        prompt: "Complete the square sum function so that it squares each number passed into it and then sums the results together.",
+        solution: "function squareSum(numbers){
+            let sum = 0
+            numbers.forEach(number => sum += (number * number))
+            return sum
+            }"
+    },
+
+    sentenceSmash; {
+        kyu: 8,
+        prompt: "Write a fuction which takes an array of words and turns them into a sentence. You may ignore puncuation.",
+        solution: "function smash (words) {
+            return words.toString().replaceAll(',', ' ')
+            }
+    },
+
+    codeUnderPressure1: {
+        kyu: 8,
+        prompt: "Code as fast as you can, double an integer and return it.",
+        solution: "function doubleInteger(i) {
+            return i*2
+            }"
+        }
+    },
+
+    writeNumbersInExpandedForms: {
+        kyu 6,
+        prompt: "You will be given a number and you will need to return it as a string in Expanded Form.",
+        solution: "function expandedForm(num) {
+            let split = num.toString().split("").map(char => {return Number(char)})
+            let maths = split.map (numb => {
+                return numb * Math.pow(10, ((split.length-1)-split.indexOf(numb)))
+            })
+            
+            return maths.join(' + ').replaceAll(' + 0', '')
             
             }"
-        },
-
-        friendOrFoe: {
-            kyu: 7,
-            prompt: "Make a prompt that filters an array of strings and returns only those with 4 letters in them.",
-            solution: "function friend(friends){
-                let real = []
-                friends.forEach((person) => { 
-                    if(person.length == 4) {
-                    real.push(person)
-                    }
-                })
-  
-                return real
-  
-            }"
-        },
-
-        oppositeNumber: {
-            kyu: 7,
-            prompt: "Given an number, find and return its opposite.",
-            solution: "function opposite(number) {
-                return -number
-                }"
-        },
-
-        convertStringToArray: {
-            kyu: 8,
-            prompt: "Write a function which turns a string into an array of words.",
-            solution: " function stringToArray(string){
-                return string.split(' ')
-
-                }"
-        },
-
-        squareSum: {
-            kyu: 8,
-            prompt: "Complete the square sum function so that it squares each number passed into it and then sums the results together.",
-            solution: "function squareSum(numbers){
-                let sum = 0
-                numbers.forEach(number => sum += (number * number))
-                return sum
-                }"
-        },
-
-        sentenceSmash; {
-            kyu: 8,
-            prompt: "Write a fuction which takes an array of words and turns them into a sentence. You may ignore puncuation.",
-            solution: "function smash (words) {
-                return words.toString().replaceAll(',', ' ')
-                }
-        },
-
-        codeUnderPressure1: {
-            kyu: 8,
-            prompt: "Code as fast as you can, double an integer and return it.",
-            solution: "function doubleInteger(i) {
-                return i*2
-                }"
-            }
-        }
+    }
 
 
 
