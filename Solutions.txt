@@ -441,6 +441,14 @@ questions:
         solution: "function maps(x){
             return x.map(num => num*2)
             }"
+    },
+
+    thirdAngleTriangle: {
+        kyu: 8,
+        prompt: "You will be given two angles of a triangle. Write a function to find and return the third.",
+        solution: "function otherAngle(a, b) {
+                return 180-a-b;
+            }"
     }
 
 
