@@ -458,7 +458,15 @@ questions:
             let output = l==w?l*w:(2*l+2*w)
             return output
             }"
-    }
+    },
+
+    returningStrings: (
+        ku: 8,
+        prompt: "Make a function that returns a greeting statement with the given name.",
+        solution: "function greet(name){
+            return `Hello, ${name} how are you doing today?`
+            }"
+    )
 
 
 
