@@ -490,6 +490,16 @@ questions:
         }"
     }
 
+    sumStringsAsNumbers: {
+        kyu: 4,
+        prompt: "Given the string representation of two integers, return the string representing the sum of those integers.",
+        solution: "function sumStrings(a,b) { 
+            let sum = (+a + +b)
+
+            return `${sum}`
+            }"
+    }
+
 
 
 
