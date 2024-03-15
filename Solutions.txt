@@ -149,22 +149,6 @@ questions:
             }"
     },
 
-    buildAPileOfCubes: {
-        kyu: 6,
-        prompt: "Your task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of n^3, the cubes will have a volume of (n-1)^3 and so on until the top which will have a volume of 1^3. You are given a total volume 'm' of the building. Being given 'm' you can find the number 'n' of cubes you will need to build said building."
-
-        solution: "function findNb(m) {
-            let n = m
-            let counter = 0
-            
-            for (counter; n > 0; counter++) {
-                n -= (counter*counter*counter)
-            }
-            
-            return (n==0)?(counter-1):(-1)
-            }"
-    },
-
     sumOfParts: {
         kyu: 6,
         prompt: "Add every element in an array of numbers together, save that number in an array, then remove the first element of the original array. Repeat until there are no elements left in the original array.",
@@ -488,7 +472,7 @@ questions:
         
         return latin.join(' ')
         }"
-    }
+    },
 
     sumStringsAsNumbers: {
         kyu: 4,
@@ -498,7 +482,25 @@ questions:
 
             return `${sum}`
             }"
-    }
+    },
+
+    buildAPileOfCubes: {
+        kyu: 6,
+        prompt: "Your task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of n^3, the cubes will have a volume of (n-1)^3 and so on until the top which will have a volume of 1^3. You are given a total volume 'm' of the building. Being given 'm' you can find the number 'n' of cubes you will need to build said building."
+
+        solution: "function findNb(m) {
+            let n = m
+            let counter = 0
+            
+            for (counter; n > 0; counter++) {
+                n -= (counter*counter*counter)
+            }
+            
+            return (n==0)?(counter-1):(-1)
+            }"
+    },
+
+
 
 
 
