@@ -23,8 +23,7 @@ questions:
             if(operation=='/'){
                 return (value1 / value2)
                 }
-            }"
-            
+            }"     
     },
 
     grasshopperPersonalizedMessage:{
@@ -499,6 +498,22 @@ questions:
             return (n==0)?(counter-1):(-1)
             }"
     },
+
+    shortestWord: {
+        kyu: 7,
+        prompt: "Given a string of words find and return the length of the shortest word.",
+        solution: "function findShort(s){
+            let shortest = 'asdfghjkjhgtfrdeswdfgh'
+            
+            s.split(' ').forEach(word => {
+                if(word.length < shortest.length){
+                shortest = word 
+                }
+            })
+            
+            return shortest.length
+            }"
+    }
 
 
 
