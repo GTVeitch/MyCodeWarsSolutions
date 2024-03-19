@@ -530,6 +530,15 @@ questions:
             let discount = (d>6)?50:(d>2?20:0)
             return d*40-discount
             }"
+    },
+
+    beginnerSeries1Paperwork: {
+        kyu: 8,
+        prompt: "Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages. If either 'n' or 'm' are less than 0 return 0.",
+        solution: "function paperwork(n, m) {
+            let papers = (n>0 && m>0)?n*m:0
+            return papers
+            }"
     }
 
 
