@@ -138,16 +138,6 @@ questions:
             }"
     },
 
-    detectPangram: {
-        kyu: 6,
-        prompt: "A pangram is a sentence which uses every letter of the alphabet. Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.",
-        solution: "function isPangram(string){
-            let alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-            let pan = alpha.map((letter) => string.includes(letter) )
-            return !pan.includes(false)
-            }"
-    },
-
     sumOfParts: {
         kyu: 6,
         prompt: "Add every element in an array of numbers together, save that number in an array, then remove the first element of the original array. Repeat until there are no elements left in the original array.",
@@ -582,7 +572,19 @@ questions:
         solution: 'function areYouPlayingBanjo(name) {
             return name.split("")[0].toUpperCase()=='R'?`${name} plays banjo`:`${name} does not play banjo`
             }'
-    }
+    },
+
+    detectPangram: {
+        kyu: 6,
+        prompt: "A pangram is a sentence which uses every letter of the alphabet. Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.",
+        solution: "function isPangram(string){
+            let alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+            let pan = alpha.map((letter) => string.includes(letter) )
+            return !pan.includes(false)
+            }"
+    },
+
+
 
 
 }
