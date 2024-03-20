@@ -574,6 +574,14 @@ questions:
             let bmi = weight/(height*height)
             return bmi>30?"Obese":bmi>25?"Overweight":bmi>18.5?"Normal":"Underweight"
             }'
+    },
+
+    areYouPlayingBanjo: {
+        kyu:8,
+        prompt: 'Create a function which answers the question "Are you playing banjo?". If your name starts with the letter "R" or lower case "r", you are playing banjo!',
+        solution: 'function areYouPlayingBanjo(name) {
+            return name.split("")[0].toUpperCase()=='R'?`${name} plays banjo`:`${name} does not play banjo`
+            }'
     }
 
 
