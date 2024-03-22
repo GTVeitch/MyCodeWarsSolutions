@@ -576,9 +576,9 @@ questions:
     },
 
     createPhoneNumber: {
-    kyu: 6,
-    prompt: "You will recieve and array of 10 numbers, format them to be a phone number, like (123) 456-789.",
-    solution: "function createPhoneNumber(numbers){
+        kyu: 6,
+        prompt: "You will recieve and array of 10 numbers, format them to be a phone number, like (123) 456-789.",
+        solution: "function createPhoneNumber(numbers){
 
         let area = [] //wouldnt let me use = numbers [0, 1, 2]
         area.push(numbers[0])
@@ -599,6 +599,14 @@ questions:
         
         return phoneNumber
         }"
+    },
+
+    cockroach: {
+        kyu: 8,
+        prompt: "The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).",
+        solution: 'function cockroachSpeed(s) {
+            return Math.floor(s*100000/60/60)
+            }'
     }
 
 
