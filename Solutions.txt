@@ -615,6 +615,15 @@ questions:
         solution: 'function boolToWord( bool ){
             return bool?"Yes":"No"
             }'
+    },
+
+    invertValues: {
+        kyu: 9,
+        prompt: "Given an array of integers return their opposite values.",
+        solution: 'function invert(array) {
+        let flip = array.map(num => -num)
+        return flip
+        }'
     }
 
 
