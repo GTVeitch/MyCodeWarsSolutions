@@ -670,7 +670,19 @@ questions:
             })
             return points
             }'
+    },
+
+    howGoodAreYouReally:{
+        kyu: 8,
+        prompt: "Given an array of class scores and your own score determine if your score is better than the average of the class.",
+        solution: 'function betterThanAverage(classPoints, yourPoints) {
+            let classSize = classPoints.size
+            let classTotal = classPoints.reduce((a, b) => a + b, 0)
+            return (yourPoints > (classTotal/classSize))
+            }'
     }
+
+
 
 
 }
