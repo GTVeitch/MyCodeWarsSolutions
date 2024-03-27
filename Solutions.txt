@@ -700,6 +700,14 @@ questions:
             }
             return list
             }'
+    },
+
+    addingBigNumbers: {
+        kyu:4,
+        prompt: "Write a function that returns the sum of two numbers. The input numbers are strings and the function must return a string."
+        solution: 'function add(a, b) {
+            return (Number(a) + Number(b)).toString(); // Fix me!
+            }'
     }
 
 
