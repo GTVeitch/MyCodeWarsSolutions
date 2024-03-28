@@ -743,6 +743,21 @@ questions:
             }
             return total
             }'
+    },
+
+    mumbling: {
+        kyu: 7,
+        prompt: "This time no story, no theory. The examples below show you how to write function accum:........The parameter of accum is a string which includes only letters.",
+        solution: 'function accum(s) {
+                let end = []
+            for(let c = 0; c < s.length; c++){
+                let cap = s[c].toUpperCase()
+                let repeats = s[c].toLowerCase().repeat(c)
+                end.push(cap.concat(repeats))
+            }
+            
+            return end.join("-")
+            }'
     }
 
 
