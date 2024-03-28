@@ -731,6 +731,18 @@ questions:
             }
             return long.join("")
             }'
+    },
+
+    reduceButGrow: {
+        kyu: 8,
+        prompt: 'Given a non-empty array of integers, return the result of multiplying the values together in order.',
+        solution: 'function grow(x){
+            let total = 1
+            for(let c = 0; c < x.length; c++){
+                total *= x[c]
+            }
+            return total
+            }'
     }
 
 
