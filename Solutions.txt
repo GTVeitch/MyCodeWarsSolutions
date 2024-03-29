@@ -774,6 +774,14 @@ questions:
         solution: 'function findNextSquare(sq) {
             return `${Math.sqrt(sq)}`.includes('.')?-1:((Math.sqrt(sq) + 1)*(Math.sqrt(sq) + 1))
             }'
+    },
+
+    makeUpperCase: {
+        kyu: 8,
+        prompt: 'Write a function which converts the input string to uppercase.',
+        solution: 'function makeUpperCase(str) {
+            return str.toUpperCase()
+            }'
     }
 
 
