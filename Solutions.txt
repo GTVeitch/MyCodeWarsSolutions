@@ -782,7 +782,24 @@ questions:
         solution: 'function makeUpperCase(str) {
             return str.toUpperCase()
             }'
-    }
+    },
+
+    humanReadableTime: {
+        kyu: 5,
+        prompt: 'Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)'
+        solution: 'function humanReadable (seconds) {
+            let seco = seconds
+            let sec = seco %= 60
+            let minutes = Math.floor(seconds/60)
+            let hours = Math.floor(seconds/3600)
+            
+            minutes = minutes - (hours*60)
+            
+            return `${hours>9?hours:`0${hours}`}:${minutes>9?minutes:`0${minutes}`}:${sec>9?sec:`0${sec}`}`;
+            }'
+    },
+
+    
 
 
 }
