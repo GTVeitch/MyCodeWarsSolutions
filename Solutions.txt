@@ -162,15 +162,6 @@ questions:
             }"
     },
 
-    arrayDiff: {
-        kyu: 6,
-        prompt: "Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list 'a' that are present in list 'b' whilst maintaining their order.
-        solution: "function arrayDiff(a, b) {
-            const filtered = a.filter((keyword) => !b.includes(keyword))
-            return filtered
-            }"
-    },
-
     directionsReduction : {
         kyu: 5,
         prompt: "Remove adjacent North and South as well as East and West from an array of directions.",
@@ -799,7 +790,16 @@ questions:
             }'
     },
 
-    
+    arrayDiff: {
+        kyu: 6,
+        prompt: "Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list 'a' that are present in list 'b' whilst maintaining their order.
+        solution: "function arrayDiff(a, b) {
+            const filtered = a.filter((keyword) => !b.includes(keyword))
+            return filtered
+            }"
+    },
+
+
 
 
 }
