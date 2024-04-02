@@ -842,6 +842,14 @@ questions:
                     break
                 }
             }'
+    },
+
+    centuryFromYear: {
+        kyu: 8,
+        prompt: 'Given a year, return the century it is in.'
+        solution: 'function century(year) {
+            return Math.ceil(year/100)
+            }'
     }
 
 
