@@ -882,7 +882,17 @@ questions:
         solution: 'function hoopCount (n) {
             return n>9?"Great, now move on to tricks":"Keep at it until you get it"
             }'
-        }
+    },
+
+    theFeastOfManyBeasts: {
+        kyu: 8,
+        prompt: 'Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast. Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.',
+        solution: 'function feast(beast, dish) {
+            let animal = beast.split('')
+            let food = dish.split('')
+            return (animal[0] == food[0] && animal[animal.length-1] == food[food.length-1])?true:false
+            }
+    }
 
 
 }
