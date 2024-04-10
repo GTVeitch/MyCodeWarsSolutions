@@ -1015,6 +1015,14 @@ questions:
             let inverse = x.toLowerCase().split("").reverse()
             return inverse.join("")==x.toLowerCase()
             }'
+    },
+
+    isTheStringUpperCase: {
+        kyu: 8,
+        prompt: 'Create a method to see whether the string is ALL CAPS.'
+        solution: 'function(str) {
+            return str.toUpperCase() === str
+            }'
     }
 
 
