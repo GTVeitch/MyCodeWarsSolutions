@@ -1008,7 +1008,14 @@ questions:
             }'
     }
 
-    
+    isItAPalindrome: {
+        kyu: 8,
+        prompt: 'Write a function that checks if a given string is a palindrome. A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as madam or racecar.'
+        solution: 'function isPalindrome(x) {
+            let inverse = x.toLowerCase().split("").reverse()
+            return inverse.join("")==x.toLowerCase()
+            }'
+    }
 
 
 }
