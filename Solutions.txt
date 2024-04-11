@@ -1047,6 +1047,14 @@ questions:
             })
             return parseInt(nums.sort().reverse().join(''))
             }"
+    },
+
+    sortNumbers: {
+        kyu: 7,
+        prompt: "Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.",
+        solution: 'function solution(nums){
+            return nums.sort()
+            }'
     }
 
 }
