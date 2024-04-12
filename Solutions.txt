@@ -247,22 +247,6 @@ questions:
         }"
     },
 
-    friendOrFoe: {
-        kyu: 7,
-        prompt: "Make a prompt that filters an array of strings and returns only those with 4 letters in them.",
-        solution: "function friend(friends){
-            let real = []
-            friends.forEach((person) => { 
-                if(person.length == 4) {
-                real.push(person)
-                }
-            })
-
-            return real
-
-        }"
-    },
-
     oppositeNumber: {
         kyu: 7,
         prompt: "Given an number, find and return its opposite.",
@@ -1074,6 +1058,22 @@ questions:
             
             return reversed.join(" ")
             }'
-    }
+    },
+
+    friendOrFoe: {
+        kyu: 7,
+        prompt: "Make a prompt that filters an array of strings and returns only those with 4 letters in them.",
+        solution: "function friend(friends){
+            let real = []
+            friends.forEach((person) => { 
+                if(person.length == 4) {
+                real.push(person)
+                }
+            })
+
+            return real
+
+        }"
+    },
 
 }
