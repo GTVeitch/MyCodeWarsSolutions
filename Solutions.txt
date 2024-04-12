@@ -1063,6 +1063,17 @@ questions:
         solution: 'function sayHello(name) {
             return `Hello, ${name}`
             }'
+    },
+
+    reverseWords: {
+        kyu: 8,
+        prompt: 'Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.',
+        solution: 'function reverseWords(str) {
+            let words = str.split(" ")
+            let reversed = words.map(word => word.split("").reverse().join(""))
+            
+            return reversed.join(" ")
+            }'
     }
 
 }
