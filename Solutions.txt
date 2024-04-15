@@ -272,20 +272,6 @@ questions:
         }
     },
 
-    buildTower: {
-        kyu: 6,
-        prompt: "Build a pyramid-shaped tower, as an array/list of strings, given a postitive integer to represent the number of floors. A tower block is represented with * characters.",
-        solution: "function towerBuilder(nFloors) {
-        let tower = []
-        for(let height = 0; height < nFloors; height ++){
-            let currentFloor = '**'.repeat(nFloors-height).slice(0, -1)
-            currentFloor = ' '.repeat(height).concat(currentFloor.concat(' '.repeat(height)))
-            tower.unshift(currentFloor)
-        }
-            return tower
-        }"
-    },
-
     lostWithoutAMap; {
         kyu: 8,
         prompt: "Given an array of integers, return a new array with each value doubled.",
@@ -1075,5 +1061,19 @@ questions:
             
             }"
     },
+
+    buildTower: {
+        kyu: 6,
+        prompt: "Build a pyramid-shaped tower, as an array/list of strings, given a postitive integer to represent the number of floors. A tower block is represented with * characters.",
+        solution: "function towerBuilder(nFloors) {
+        let tower = []
+        for(let height = 0; height < nFloors; height ++){
+            let currentFloor = '**'.repeat(nFloors-height).slice(0, -1)
+            currentFloor = ' '.repeat(height).concat(currentFloor.concat(' '.repeat(height)))
+            tower.unshift(currentFloor)
+        }
+            return tower
+        }"
+    }
 
 }
