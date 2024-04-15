@@ -272,20 +272,6 @@ questions:
         }
     },
 
-    writeNumbersInExpandedForms: {
-        kyu 6,
-        prompt: "You will be given a number and you will need to return it as a string in Expanded Form.",
-        solution: "function expandedForm(num) {
-            let split = num.toString().split("").map(char => {return Number(char)})
-            let maths = split.map (numb => {
-                return numb * Math.pow(10, ((split.length-1)-split.indexOf(numb)))
-            })
-            
-            return maths.join(' + ').replaceAll(' + 0', '')
-            
-            }"
-    },
-
     buildTower: {
         kyu: 6,
         prompt: "Build a pyramid-shaped tower, as an array/list of strings, given a postitive integer to represent the number of floors. A tower block is represented with * characters.",
@@ -1073,6 +1059,20 @@ questions:
             }
             
             return returnthis
+            }"
+    },
+
+    writeNumbersInExpandedForms: {
+        kyu 6,
+        prompt: "You will be given a number and you will need to return it as a string in Expanded Form.",
+        solution: "function expandedForm(num) {
+            let split = num.toString().split("").map(char => {return Number(char)})
+            let maths = split.map (numb => {
+                return numb * Math.pow(10, ((split.length-1)-split.indexOf(numb)))
+            })
+            
+            return maths.join(' + ').replaceAll(' + 0', '')
+            
             }"
     },
 
