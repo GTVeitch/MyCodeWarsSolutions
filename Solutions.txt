@@ -672,15 +672,6 @@ questions:
             }'
     },
 
-    arrayDiff: {
-        kyu: 6,
-        prompt: "Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list 'a' that are present in list 'b' whilst maintaining their order.
-        solution: "function arrayDiff(a, b) {
-            const filtered = a.filter((keyword) => !b.includes(keyword))
-            return filtered
-            }"
-    },
-
     function1HelloWorld: {
         kyu: 8,
         prompt: 'Make a simple function called greet that returns the most-famous "hello world!".',
@@ -1073,6 +1064,15 @@ questions:
         prompt: "You will be given two angles of a triangle. Write a function to find and return the third.",
         solution: "function otherAngle(a, b) {
                 return 180-a-b;
+            }"
+    },
+
+    arrayDiff: {
+        kyu: 6,
+        prompt: "Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list 'a' that are present in list 'b' whilst maintaining their order.
+        solution: "function arrayDiff(a, b) {
+            const filtered = a.filter((keyword) => !b.includes(keyword))
+            return filtered
             }"
     }
 
