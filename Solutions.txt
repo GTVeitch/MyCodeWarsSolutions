@@ -448,15 +448,6 @@ questions:
             }"
     },
 
-    youOnlyNeedOne: {
-        kyu:8,
-        prompt: 'You will be given an array a and a value x. All you need to do is check whether the provided array contains the value. Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.',
-        solution: 'function check(a, x) {
-            let found = a.find(thing => thing === x)
-            return found==x?true:false
-            }'
-    },
-
     willYouMakeIt: {
         kyu: 8
         prompt: "You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true if it is possible and false if not.",
@@ -1074,6 +1065,15 @@ questions:
         }
             return tower
         }"
-    }
+    },
+
+    youOnlyNeedOne: {
+        kyu:8,
+        prompt: 'You will be given an array a and a value x. All you need to do is check whether the provided array contains the value. Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.',
+        solution: 'function check(a, x) {
+            let found = a.find(thing => thing === x)
+            return found==x?true:false
+            }'
+    },
 
 }
