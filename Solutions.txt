@@ -280,14 +280,6 @@ questions:
             }"
     },
 
-    thirdAngleTriangle: {
-        kyu: 8,
-        prompt: "You will be given two angles of a triangle. Write a function to find and return the third.",
-        solution: "function otherAngle(a, b) {
-                return 180-a-b;
-            }"
-    },
-
     areaOrPerimeter: {
         kyu: 8,
         prompt: "You will be given lengh and width of a four sided shape. It will either be a rectangle or a square. If it's a square return the area, else return the perimeter.",
@@ -1075,5 +1067,13 @@ questions:
             return found==x?true:false
             }'
     },
+
+    thirdAngleTriangle: {
+        kyu: 8,
+        prompt: "You will be given two angles of a triangle. Write a function to find and return the third.",
+        solution: "function otherAngle(a, b) {
+                return 180-a-b;
+            }"
+    }
 
 }
