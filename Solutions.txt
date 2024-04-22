@@ -1128,6 +1128,15 @@ questions:
         solution: 'function sum (numbers) {
             return numbers.reduce((a, b) => a + b, 0)
             }'
+    },
+
+    sneakyFive: {
+        kyu: 8,
+        prompt: 'Write a function that returns the integer 5 without utilizing numbers or strings.',
+        solution: 'function sneaky () {
+            let sneak = [ , , , , ]
+            return sneak.length()
+        }'
     }
 
 }
