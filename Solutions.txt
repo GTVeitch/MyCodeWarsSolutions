@@ -664,25 +664,6 @@ questions:
             }'
     },
 
-    removeTheMinimum: {
-        kyu: 7,
-        prompt: 'Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list. Don't change the order of the elements that are left.',
-        solution: 'function removeSmallest(numbers) {
-            let smallest = numbers[0]
-            let numbs = numbers
-            for(let c = 0; c < numbers.length; c++){
-                if(numbers[c] < smallest) {
-                smallest = numbers[c]
-                }
-            }
-            let index = numbs.findIndex(o => o === smallest)
-            if(index !== -1) {
-                numbs.splice(index, 1)
-            }
-                return numbs
-            }'
-    },
-
     logicDrillTrafficLight: {
         kyu: 7,
         prompt: 'You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again. Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.',
@@ -1147,6 +1128,26 @@ questions:
             let filtered  = birds.filter((keyword) => !geese.includes(keyword))
             return filtered
             }'
-    }
+    },
+
+    removeTheMinimum: {
+        kyu: 7,
+        prompt: 'Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list. Don't change the order of the elements that are left.',
+        solution: 'function removeSmallest(numbers) {
+            let smallest = numbers[0]
+            let numbs = numbers
+            for(let c = 0; c < numbers.length; c++){
+                if(numbers[c] < smallest) {
+                smallest = numbers[c]
+                }
+            }
+            let index = numbs.findIndex(o => o === smallest)
+            if(index !== -1) {
+                numbs.splice(index, 1)
+            }
+                return numbs
+            }'
+    },
+
 
 }
