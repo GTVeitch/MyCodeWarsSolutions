@@ -1170,6 +1170,14 @@ questions:
         solution: 'function noSpace(x){
             return x.split(" ").join("")
             }'
+    },
+
+    convertANumberToAString: {
+        kyu: 8,
+        prompt: 'We need a function that can transform a number (integer) into a string.',
+        solution: 'function numberToString(num) {
+            return `${num}`
+            }'
     }
 
 
