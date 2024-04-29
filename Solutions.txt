@@ -1221,5 +1221,19 @@ questions:
             }'
     },
 
+    beginnerSeries3SumofNumbers: {
+        kyu: 7,
+        prompt: 'Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.',
+        solution: 'function getSum(a, b){
+            let larger = a>b?a:b
+            let smaller = a<b?a:b
+            let sum = 0
+            for(let c = smaller; c < larger; c++){
+                sum +=c
+            }
+            return sum
+            }'
+    }
+
 
 }
