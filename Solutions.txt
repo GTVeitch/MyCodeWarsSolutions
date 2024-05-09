@@ -1233,6 +1233,19 @@ questions:
             }
             return sum
             }'
+    },
+
+    listFiltering: {
+        kyu: 7,
+        prompt: 'In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.',
+        solution: 'function filter_list(l) {
+            let filtered = []
+            l.forEach((item) => {
+                if (typeof item !== "string") {filtered.push(item)}
+            })
+            
+            return filtered
+            }'
     }
 
 
