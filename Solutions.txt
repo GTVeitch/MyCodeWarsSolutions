@@ -1246,6 +1246,21 @@ questions:
             
             return filtered
             }'
+    },
+
+    correctTheMistakesOfCharacterRecognitionSoftware: {
+        kyu: 8,
+        prompt: 'Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer. When documents (especially pretty old ones written with a typewriter), are digitised character recognition softwares often make mistakes.',
+        solution: 'function correct(string) {
+                let chars = string.split("")
+            let correction = chars.map((char) => {
+                if (char == "5"){return "S"}
+                if (char == "0"){return "O"}
+                if (char == "1"){return "I"}
+                return char
+            })
+            return correction.join("")
+            }'
     }
 
 
