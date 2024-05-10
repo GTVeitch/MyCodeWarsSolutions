@@ -1261,7 +1261,15 @@ questions:
         solution: 'function isTriangle(a,b,c){
             return (a+b>c && b+c>a && a+c>b)?true:false
             }'
-    }
+    },
 
+    reversingWordsInAString: {
+        kyu: 8,
+        prompt: 'You need to write a function that reverses the words in a given string. A word can also fit an empty string.',
+        solution: 'function reverse(string){
+            let words = string.split(" ")
+            return words.reverse().join(" ")
+            }'
+    }
 
 }
