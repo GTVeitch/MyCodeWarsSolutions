@@ -281,28 +281,6 @@ questions:
             }"
     ),
 
-    simplePigLatin: {
-        kyu: 5,
-        prompt: "Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.",
-        solution: "function pigIt(str){
-        let words = str.split(' ')
-        
-        let latin = words.map((word) => {
-            if (word !='!' && word != '.' && word != ',' && word !='?'){
-            let letters = word.split('')
-            letters.push(letters[0])
-            letters.shift()
-            letters.push('ay')
-        
-            return letters.join('')
-            }
-            return word
-        })
-        
-        return latin.join(' ')
-        }"
-    },
-
     sumStringsAsNumbers: {
         kyu: 4,
         prompt: "Given the string representation of two integers, return the string representing the sum of those integers.",
@@ -1279,6 +1257,28 @@ questions:
             if (animal.toUpperCase() == "ALLIGATOR") {return "small"}
             return "wide"
             }
+    },
+
+    simplePigLatin: {
+        kyu: 5,
+        prompt: "Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.",
+        solution: "function pigIt(str){
+        let words = str.split(' ')
+        
+        let latin = words.map((word) => {
+            if (word !='!' && word != '.' && word != ',' && word !='?'){
+            let letters = word.split('')
+            letters.push(letters[0])
+            letters.shift()
+            letters.push('ay')
+        
+            return letters.join('')
+            }
+            return word
+        })
+        
+        return latin.join(' ')
+        }"
     }
 
 
