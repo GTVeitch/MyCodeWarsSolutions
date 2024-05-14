@@ -1279,6 +1279,21 @@ questions:
         
         return latin.join(' ')
         }"
+    },
+
+    vowelRemover: {
+        kyu: 8,
+        prompt: 'Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string',
+        solution: 'function shortcut (string) {
+            let letters = string.split('')
+            let filtered = []
+            letters.forEach(letter => {
+                if (letter !== 'a' && letter !== 'e' && letter !== 'i' && letter !== 'o' && letter !== 'u'){
+                filtered.push(letter)
+                }
+            })
+            return filtered.join('')
+            }"
     }
 
 
