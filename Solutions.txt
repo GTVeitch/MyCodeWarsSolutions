@@ -873,17 +873,6 @@ questions:
             }'
     },
 
-    reverseWords: {
-        kyu: 8,
-        prompt: 'Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.',
-        solution: 'function reverseWords(str) {
-            let words = str.split(" ")
-            let reversed = words.map(word => word.split("").reverse().join(""))
-            
-            return reversed.join(" ")
-            }'
-    },
-
     friendOrFoe: {
         kyu: 7,
         prompt: "Make a prompt that filters an array of strings and returns only those with 4 letters in them.",
@@ -1303,7 +1292,19 @@ questions:
             let shortened = url.split('#')
             return shortened[0]
             }"
+    },
+
+        reverseWords: {
+        kyu: 8,
+        prompt: 'Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.',
+        solution: 'function reverseWords(str) {
+            let words = str.split(" ")
+            let reversed = words.map(word => word.split("").reverse().join(""))
+            
+            return reversed.join(" ")
+            }'
     }
+
 
 
 
