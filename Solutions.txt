@@ -1294,6 +1294,15 @@ questions:
             })
             return filtered.join('')
             }"
+    },
+
+    removeAnchorFromUrl: {
+        kyu: 7,
+        prompt: 'Complete the function/method so that it returns the url with anything after the anchor (#) removed.',
+        solution: "function removeUrlAnchor(url){
+            let shortened = url.split('#')
+            return shortened[0]
+            }"
     }
 
 
