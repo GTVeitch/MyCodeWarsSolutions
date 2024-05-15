@@ -1295,14 +1295,28 @@ questions:
     },
 
         reverseWords: {
+            kyu: 8,
+            prompt: 'Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.',
+            solution: 'function reverseWords(str) {
+                let words = str.split(" ")
+                let reversed = words.map(word => word.split("").reverse().join(""))
+                
+                return reversed.join(" ")
+                }'
+    },
+
+    smallEnough: {
         kyu: 8,
-        prompt: 'Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.',
-        solution: 'function reverseWords(str) {
-            let words = str.split(" ")
-            let reversed = words.map(word => word.split("").reverse().join(""))
-            
-            return reversed.join(" ")
+        solution: 'function smallEnough(a, limit){
+            let filtered = []
+            a.forEach(number => {
+                if (number <= limit){
+                filtered.push(number)
+                }
+            })
+            return filtered.length == a.length
             }'
+        prompt: 'You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false. You can assume all values in the array are numbers.'
     }
 
 
