@@ -1317,9 +1317,19 @@ questions:
             
             return end.join("-")
             }'
+    },
+
+    youreASquare: {
+        kyu: 7,
+        prompt: 'Given an integral number, determine if it's a square number.'
+        solution: 'var isSquare = function(n){
+            let square = true
+            let root = Math.sqrt(n)
+            if (`${root}`.includes(`.`)) { square = false }
+            if (n < 0) { square = false }
+            return square
+            }'
     }
-
-
 
 
 
