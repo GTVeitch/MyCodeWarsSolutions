@@ -1359,6 +1359,21 @@ questions:
         solution: 'function getRealFloor(n) {
             return n>0?(n>13?n-2:n-1):n
             }'
+    },
+
+    factorial: {
+        kyu: 7,
+        prompt: 'In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n.',
+        solution: 'function factorial(n) {
+            let total = 1
+            
+            if (n > 0) {
+                for(let count = (n-1); count > 0; count - 1) {
+                    total = total*n
+                }
+            }
+            return total
+            }'
     }
 
 
