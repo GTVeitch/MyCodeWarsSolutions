@@ -487,14 +487,6 @@ questions:
             }'
     },
 
-    isHeGonnaSurvive: {
-        kyu: 8,
-        prompt: 'A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive? Return true if yes, false otherwise.'
-        solution: 'function hero(bullets, dragons){
-            return bullets/dragons >= 2
-            }'
-    },
-
     testing123: {
         kyu: 7,
         prompt: 'Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering. Write a function which takes a list of strings and returns each line prepended by the correct number. The numbering starts at 1. The format is n: string. Notice the colon and space in between.',
@@ -1374,9 +1366,15 @@ questions:
         solution: 'function century(year) {
             return Math.ceil(year/100)
             }'
+    },
+
+    isHeGonnaSurvive: {
+        kyu: 8,
+        prompt: 'A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive? Return true if yes, false otherwise.'
+        solution: 'function hero(bullets, dragons){
+            return bullets/dragons >= 2
+            }'
     }
-
-
 
 
 }
