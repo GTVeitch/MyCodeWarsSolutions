@@ -1391,5 +1391,14 @@ questions:
             }'
     },
 
+    terminalGameCombatFunction : {
+        kyu: 8,
+        prompt: 'Create a combat function that takes the player's current health and the amount of damage recieved, and returns the player's new health. Health can't be less than 0.',
+        solution: 'function combat(health, damage) {
+            let total = health - damage
+            if (total < 0) { return 0 }
+            return total
+            }'
+    }
 
 }
