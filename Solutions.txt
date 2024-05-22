@@ -530,18 +530,6 @@ questions:
             }'
     },
 
-    reduceButGrow: {
-        kyu: 8,
-        prompt: 'Given a non-empty array of integers, return the result of multiplying the values together in order.',
-        solution: 'function grow(x){
-            let total = 1
-            for(let c = 0; c < x.length; c++){
-                total *= x[c]
-            }
-            return total
-            }'
-    },
-
     evenOrOdd: {
         kyu: 8,
         prompt: "Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.",
@@ -1389,7 +1377,19 @@ questions:
             })
             return changed.join("")
             }'
-    }
+    },
+
+    reduceButGrow: {
+        kyu: 8,
+        prompt: 'Given a non-empty array of integers, return the result of multiplying the values together in order.',
+        solution: 'function grow(x){
+            let total = 1
+            for(let c = 0; c < x.length; c++){
+                total *= x[c]
+            }
+            return total
+            }'
+    },
 
 
 }
