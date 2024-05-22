@@ -1374,6 +1374,21 @@ questions:
         solution: 'function hero(bullets, dragons){
             return bullets/dragons >= 2
             }'
+    },
+
+    replaceAllVowelsWithExclaimationMarks: {
+        kyu: 7,
+        prompt: 'Replace all vowel to exclamation mark in the sentence.',
+        solution: 'function replace(s){
+            let letters = s.split("")
+            let changed = letters.map(letter => {
+                if(letter.toUpperCase() == "A" || letter.toUpperCase() == "E" || letter.toUpperCase() == "I" || letter.toUpperCase() == "O" || letter.toUpperCase() == "U"){
+                return "!"
+                }
+                return letter
+            })
+            return changed.join("")
+            }'
     }
 
 
