@@ -1391,6 +1391,22 @@ questions:
         
         return phoneNumber
         }"
+    },
+
+    willYouMakeIt: {
+        kyu: 8
+        prompt: "You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true if it is possible and false if not.",
+        solution: 'const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+            return mpg*fuelLeft>=distanceToPump
+            }'
+    },
+
+    cockroach: {
+        kyu: 8,
+        prompt: "The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).",
+        solution: 'function cockroachSpeed(s) {
+            return Math.floor(s*100000/60/60)
+            }'
     }
 
 }
