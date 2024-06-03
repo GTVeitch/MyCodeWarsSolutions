@@ -1407,6 +1407,15 @@ questions:
         solution: 'function cockroachSpeed(s) {
             return Math.floor(s*100000/60/60)
             }'
+    },
+
+    plural: {
+        kyu: 8,
+        prompt: "We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not.",
+        solution: 'function plural(n) {
+            if (n !== 1) { return true}
+            return false
+            }'
     }
 
 }
