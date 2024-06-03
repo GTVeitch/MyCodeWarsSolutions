@@ -1087,28 +1087,6 @@ questions:
             }'
     },
 
-    findTheNextPerfectSquare: {
-        kyu: 7,
-        prompt: 'Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer. If the argument is itself not a perfect square then return either -1 or an empty value like None or null, depending on your language. You may assume the argument is non-negative.",
-        solution: 'function findNextSquare(sq) {
-            return `${Math.sqrt(sq)}`.includes('.')?-1:((Math.sqrt(sq) + 1)*(Math.sqrt(sq) + 1))
-            }'
-    },
-
-    beginnerSeries3SumofNumbers: {
-        kyu: 7,
-        prompt: 'Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.',
-        solution: 'function getSum(a, b){
-            let larger = a>b?a:b
-            let smaller = a<b?a:b
-            let sum = 0
-            for(let c = smaller; c < larger; c++){
-                sum +=c
-            }
-            return sum
-            }'
-    },
-
     listFiltering: {
         kyu: 7,
         prompt: 'In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.',
@@ -1415,6 +1393,14 @@ questions:
         solution: 'function plural(n) {
             if (n !== 1) { return true}
             return false
+            }'
+    },
+
+        findTheNextPerfectSquare: {
+        kyu: 7,
+        prompt: 'Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer. If the argument is itself not a perfect square then return either -1 or an empty value like None or null, depending on your language. You may assume the argument is non-negative.",
+        solution: 'function findNextSquare(sq) {
+            return `${Math.sqrt(sq)}`.includes('.')?-1:((Math.sqrt(sq) + 1)*(Math.sqrt(sq) + 1))
             }'
     }
 
