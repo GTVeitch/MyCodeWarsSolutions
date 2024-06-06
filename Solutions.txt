@@ -469,29 +469,6 @@ questions:
             }'
     },
 
-    humanReadableTime: {
-        kyu: 5,
-        prompt: 'Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)'
-        solution: 'function humanReadable (seconds) {
-            let seco = seconds
-            let sec = seco %= 60
-            let minutes = Math.floor(seconds/60)
-            let hours = Math.floor(seconds/3600)
-            
-            minutes = minutes - (hours*60)
-            
-            return `${hours>9?hours:`0${hours}`}:${minutes>9?minutes:`0${minutes}`}:${sec>9?sec:`0${sec}`}`;
-            }'
-    },
-
-    function1HelloWorld: {
-        kyu: 8,
-        prompt: 'Make a simple function called greet that returns the most-famous "hello world!".',
-        solution: 'function greet() {
-            return 'hello world!'
-            }'
-    },
-
     logicDrillTrafficLight: {
         kyu: 7,
         prompt: 'You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again. Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.',
@@ -1432,7 +1409,24 @@ questions:
         solution: 'function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
             return laLigaGoals + copaDelReyGoals + championsLeagueGoals
             }'
+    },
+
+    humanReadableTime: {
+        kyu: 5,
+        prompt: 'Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)'
+        solution: 'function humanReadable (seconds) {
+            let seco = seconds
+            let sec = seco %= 60
+            let minutes = Math.floor(seconds/60)
+            let hours = Math.floor(seconds/3600)
+            
+            minutes = minutes - (hours*60)
+            
+            return `${hours>9?hours:`0${hours}`}:${minutes>9?minutes:`0${minutes}`}:${sec>9?sec:`0${sec}`}`;
+            }'
     }
+
+
 
 
 
