@@ -1424,7 +1424,15 @@ questions:
             
             return `${hours>9?hours:`0${hours}`}:${minutes>9?minutes:`0${minutes}`}:${sec>9?sec:`0${sec}`}`;
             }'
-    }
+    },
+
+    function1HelloWorld: {
+        kyu: 8,
+        prompt: 'Make a simple function called greet that returns the most-famous "hello world!".',
+        solution: 'function greet() {
+            return 'hello world!'
+            }'
+    },
 
 
 
