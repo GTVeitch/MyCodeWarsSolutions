@@ -1434,7 +1434,19 @@ questions:
             }'
     },
 
-
+    doubleChar: {
+        kyu: 8,
+        prompt: 'Given a string, you have to return a string in which each character (case-sensitive) is repeated once.'
+        solution: 'function doubleChar(str) {
+            let letters = str.split("")
+            let processed = []
+            letters.forEach((letter) => {
+                new.push(letter)
+                new.push(letter)
+            })
+            return processed.join("")
+            }'
+    }
 
 
 
