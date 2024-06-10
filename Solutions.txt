@@ -565,18 +565,6 @@ questions:
             }"
     },
 
-    powersOfTwo: {
-        kyu: 8,
-        prompt: 'Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).',
-        solution: 'function powersOfTwo(n){
-            let list = []
-            for(let c = 0; c <= n; n++){
-                list.push(2**c)
-            }
-            return list
-            }'
-    },
-
     keepHydrated: {
         kyu: 8,
         prompt: 'Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling. You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.',
@@ -1374,7 +1362,6 @@ questions:
             return name.split("")[0].toUpperCase()=='R'?`${name} plays banjo`:`${name} does not play banjo`
             }'
     },
-
     
     detectPangram: {
         kyu: 6,
@@ -1446,8 +1433,19 @@ questions:
             })
             return processed.join("")
             }'
-    }
+    },
 
+    powersOfTwo: {
+        kyu: 8,
+        prompt: 'Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).',
+        solution: 'function powersOfTwo(n){
+            let list = []
+            for(let c = 0; c <= n; n++){
+                list.push(2**c)
+            }
+            return list
+            }'
+    },
 
 
 
