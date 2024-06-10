@@ -273,14 +273,6 @@ questions:
             }"
     },
 
-    returningStrings: (
-        ku: 8,
-        prompt: "Make a function that returns a greeting statement with the given name.",
-        solution: "function greet(name){
-            return `Hello, ${name} how are you doing today?`
-            }"
-    ),
-
     sumStringsAsNumbers: {
         kyu: 4,
         prompt: "Given the string representation of two integers, return the string representing the sum of those integers.",
@@ -1447,6 +1439,12 @@ questions:
             }'
     },
 
-
+    returningStrings: (
+        ku: 8,
+        prompt: "Make a function that returns a greeting statement with the given name.",
+        solution: "function greet(name){
+            return `Hello, ${name} how are you doing today?`
+            }"
+    ),
 
 }
