@@ -445,14 +445,6 @@ questions:
             }'
     },
 
-    evenOrOdd: {
-        kyu: 8,
-        prompt: "Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.",
-        solution: 'function evenOrOdd(number) {
-            return (`${number/2}`.includes(`.`))?"Odd":"Even"
-            }'
-    },
-
     makeUpperCase: {
         kyu: 8,
         prompt: 'Write a function which converts the input string to uppercase.',
@@ -1446,5 +1438,13 @@ questions:
             return `Hello, ${name} how are you doing today?`
             }"
     ),
+
+    evenOrOdd: {
+        kyu: 8,
+        prompt: "Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.",
+        solution: 'function evenOrOdd(number) {
+            return (`${number/2}`.includes(`.`))?"Odd":"Even"
+            }'
+    }
 
 }
