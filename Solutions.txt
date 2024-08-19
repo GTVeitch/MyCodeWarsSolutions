@@ -1331,14 +1331,6 @@ questions:
             }'
     },
 
-    xorOperator: {
-        kyu: 8,
-        prompt: 'In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans. It then returns true if exactly one of the two expressions are true, false otherwise.',
-        solution: 'function xor(a, b) {
-            return (a !== b)
-            }'
-    },
-
     areYouPlayingBanjo: {
         kyu:8,
         prompt: 'Create a function which answers the question "Are you playing banjo?". If your name starts with the letter "R" or lower case "r", you are playing banjo!',
@@ -1444,6 +1436,14 @@ questions:
         prompt: "Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.",
         solution: 'function evenOrOdd(number) {
             return (`${number/2}`.includes(`.`))?"Odd":"Even"
+            }'
+    },
+
+    xorOperator: {
+        kyu: 8,
+        prompt: 'In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans. It then returns true if exactly one of the two expressions are true, false otherwise.',
+        solution: 'function xor(a, b) {
+            return (a !== b)
             }'
     }
 
