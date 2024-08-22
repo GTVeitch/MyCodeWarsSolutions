@@ -615,38 +615,6 @@ questions:
             }'
     },
 
-    isTheStringUpperCase: {
-        kyu: 8,
-        prompt: 'Create a method to see whether the string is ALL CAPS.'
-        solution: 'function(str) {
-            return str.toUpperCase() === str
-            }'
-    }
-
-    countByX: {
-        kyu: 8,
-        prompt: 'Create a function with two arguments that will return an array of the first n multiples of x. Assume both the given number and the number of times to count will be positive numbers greater than 0. Return the results as an array or list ( depending on language ).'
-        solution: 'function countBy(x, n) {
-            let z = [];
-            for(let c = 1; c <= n; c++){
-                z.push(c*x)
-            }
-            return z;
-            }'
-       },
-
-    descendingOrder: {
-        kyu: 7,
-        prompt: 'Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.',
-        solution: "function descendingOrder(n){
-            let nums = `${n}`.split('')
-            nums = nums.map(num => {
-                return parseInt(num)
-            })
-            return parseInt(nums.sort().reverse().join(''))
-            }"
-    },
-
     sortNumbers: {
         kyu: 7,
         prompt: "Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.",
@@ -1456,6 +1424,16 @@ questions:
                     break
                 }
             }'
+    },
+
+    isTheStringUpperCase: {
+        kyu: 8,
+        prompt: 'Create a method to see whether the string is ALL CAPS.'
+        solution: 'function(str) {
+            return str.toUpperCase() === str
+            }'
     }
+
+
 
 }
