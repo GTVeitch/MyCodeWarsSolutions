@@ -369,39 +369,6 @@ questions:
             }"
     },
 
-    volumeOfCuboid: {
-        kyu: 8,
-        prompt: Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.".
-        solution: "class Kata {
-            static getVolumeOfCuboid(length, width, height) {
-                return length*width*height
-            }
-            }"
-    },
-
-    totalAmountOfPoints: {
-        kyu: 8,
-        prompt: "Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score. We get 3 points for a win, 1 point for a tie and 0 points for a loss.",
-        solution: 'function points(games) {
-            let points = 0
-            games.forEach(game => {
-                if(game.split("")[0] > game.split("")[2]){points += 3}
-                if(game.split("")[0] == game.split("")[2]){points += 1}
-            })
-            return points
-            }'
-    },
-
-    howGoodAreYouReally:{
-        kyu: 8,
-        prompt: "Given an array of class scores and your own score determine if your score is better than the average of the class.",
-        solution: 'function betterThanAverage(classPoints, yourPoints) {
-            let classSize = classPoints.size
-            let classTotal = classPoints.reduce((a, b) => a + b, 0)
-            return (yourPoints > (classTotal/classSize))
-            }'
-    },
-
     testing123: {
         kyu: 7,
         prompt: 'Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering. Write a function which takes a list of strings and returns each line prepended by the correct number. The numbering starts at 1. The format is n: string. Notice the colon and space in between.',
@@ -1455,6 +1422,16 @@ questions:
                 return parseInt(num)
             })
             return parseInt(nums.sort().reverse().join(''))
+            }"
+    },
+
+        volumeOfCuboid: {
+        kyu: 8,
+        prompt: Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.".
+        solution: "class Kata {
+            static getVolumeOfCuboid(length, width, height) {
+                return length*width*height
+            }
             }"
     }
 
