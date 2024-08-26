@@ -1440,6 +1440,22 @@ questions:
             }
             return inc
             }'
+    },
+
+    mexicanWave: {
+        kyu: 6,
+        prompt: 'In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up. ',
+        solution: "function wave(str){
+            let wave = []
+            
+            for(let c = 0; c < str.length; c++ ){
+                let letters = str.split('')
+                letters[c] = letters[c].toUpperCase()
+                if (letters[c] !== ' ') {wave.push(letters.join(''))}
+            }
+            
+            return wave
+            }"
     }
 
 
