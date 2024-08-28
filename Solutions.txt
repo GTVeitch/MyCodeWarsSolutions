@@ -1441,7 +1441,14 @@ questions:
             }"
     },
 
-    
+    calculateBMI:{
+        kyu: 8,
+        prompt: "Write function bmi that calculates body mass index (bmi = weight / height2) and return a string dependent on that value.",
+        solution: 'function bmi(weight, height) {
+            let bmi = weight/(height*height)
+            return bmi>30?"Obese":bmi>25?"Overweight":bmi>18.5?"Normal":"Underweight"
+            }'
+    }
 
 
 
