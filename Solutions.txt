@@ -1448,6 +1448,14 @@ questions:
             let bmi = weight/(height*height)
             return bmi>30?"Obese":bmi>25?"Overweight":bmi>18.5?"Normal":"Underweight"
             }'
+    },
+
+    convertBooleanToString: {
+        kyu: 8,
+        prompt: 'Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.',
+        solution: 'function boolToWord( bool ){
+            return bool?"Yes":"No"
+            }'
     }
 
 
