@@ -1443,6 +1443,18 @@ questions:
 
             return abrive.join(".")
             }'
+    },
+
+    stringRepeat: {
+        kyu: 8,
+        prompt: "Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.",
+        solution: 'function repeatStr (n, s) {
+            let long = []
+            for(let c = 0; c < n; c++){
+                long.push(s)
+            }
+            return long.join("")
+            }'
     }
 
 
