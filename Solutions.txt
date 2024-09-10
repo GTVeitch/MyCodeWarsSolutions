@@ -164,7 +164,7 @@ questions:
             
             return total
             }"
-    }
+    },
 
     convertBooleanToString: {
         kyu: 8,
@@ -253,7 +253,6 @@ questions:
         solution: "function doubleInteger(i) {
             return i*2
             }"
-        }
     },
 
     lostWithoutAMap; {
@@ -351,37 +350,6 @@ questions:
                 list.push(`${counter+1}: ${array[counter]}`)
             }
             return list
-            }'
-    },
-
-    addingBigNumbers: {
-        kyu:4,
-        prompt: "Write a function that returns the sum of two numbers. The input numbers are strings and the function must return a string."
-        solution: 'function add(a, b) {
-            return (Number(a) + Number(b)).toString(); // Fix me!
-            }'
-    },
-
-    abbreviateTwoWordName: {
-        kyu: 8,
-        prompt: "Write a function to convert a name into initials. This kata strictly takes two words with one space in between them. The output should be two capital letters with a dot separating them.",
-        solution: 'function abbrevName(name){
-            let parts = name.split(" ")
-            let abrive = parts.map(part => part.split("")[0].toUpperCase())
-
-            return abrive.join(".")
-            }'
-    },
-
-    stringRepeat: {
-        kyu: 8,
-        prompt: "Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.",
-        solution: 'function repeatStr (n, s) {
-            let long = []
-            for(let c = 0; c < n; c++){
-                long.push(s)
-            }
-            return long.join("")
             }'
     },
 
@@ -1455,6 +1423,14 @@ questions:
         prompt: 'Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.',
         solution: 'function boolToWord( bool ){
             return bool?"Yes":"No"
+            }'
+    },
+
+    addingBigNumbers: {
+        kyu:4,
+        prompt: "Write a function that returns the sum of two numbers. The input numbers are strings and the function must return a string."
+        solution: 'function add(a, b) {
+            return (Number(a) + Number(b)).toString(); // Fix me!
             }'
     }
 
